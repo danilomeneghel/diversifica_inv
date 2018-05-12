@@ -40,6 +40,20 @@ Depois importe o banco de dados da pasta $db/diversificamaisinvestimentos.sql pa
 
 Feito isso, abra no seu navegador http://localhost/diversifica_inv/panel
 
+## Conexão
+
+Para entrar no sistema tente os seguinte logins:
+
+- Admin:
+
+	- Usuário: admin
+	- Senha: 123456
+	
+- User:
+
+	- Usuário: user
+	- Senha: 123456
+
 ## Licença
 
 DiversificA+ está licenciado por <a href="LICENSE.md">Yii Software LLC</a>.
