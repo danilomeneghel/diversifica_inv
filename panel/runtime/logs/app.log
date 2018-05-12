@@ -1,0 +1,1276 @@
+2018-05-11 21:17:12 [::1][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\diversificamais/vendor/bower-asset/jquery/dist in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('panel\\assets\\Ap...')
+#7 C:\xampp\htdocs\diversificamais\panel\views\site\requestPasswordReset.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(panel\controllers\SiteController))
+#11 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(415): yii\base\View->render('requestPassword...', Array, Object(panel\controllers\SiteController))
+#12 C:\xampp\htdocs\diversificamais\panel\controllers\SiteController.php(596): yii\base\Controller->renderPartial('requestPassword...', Array)
+#13 [internal function]: panel\controllers\SiteController->actionRequestPasswordReset()
+#14 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('request-passwor...', Array)
+#17 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/request-pa...', Array)
+#18 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#20 {main}
+2018-05-11 21:17:12 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'v07elr73a572cd4ctsv4f2h84g'
+    '_csrf-panel' => 'a62a0035aabeac97b8ee9d879d990bcbd71f86e8b8248239fa7b71f85906dd6fa:2:{i:0;s:11:\"_csrf-panel\";i:1;s:32:\"hF9Wn9Opz5Jqyj6yodu5bWhuTVCkiHFQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/diversificamais/panel/'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/diversificamais/panel/site/login'
+    'HTTP_COOKIE' => 'PHPSESSID=v07elr73a572cd4ctsv4f2h84g; _csrf-panel=a62a0035aabeac97b8ee9d879d990bcbd71f86e8b8248239fa7b71f85906dd6fa%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-panel%22%3Bi%3A1%3Bs%3A32%3A%22hF9Wn9Opz5Jqyj6yodu5bWhuTVCkiHFQ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Python27;C:\\Python27\\Scripts;C:\\Users\\danil\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\danil\\AppData\\Roaming\\npm;C:\\Program Files\\MongoDB\\Server\\3.6\\bin;C:\\mongodb\\bin;C:\\Users\\danil\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/diversificamais/panel/index.php'
+    'REMOTE_PORT' => '52406'
+    'REDIRECT_URL' => '/diversificamais/panel/site/request-password-reset'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/diversificamais/panel/site/request-password-reset'
+    'SCRIPT_NAME' => '/diversificamais/panel/index.php'
+    'PHP_SELF' => '/diversificamais/panel/index.php'
+    'REQUEST_TIME_FLOAT' => 1526084232.702
+    'REQUEST_TIME' => 1526084232
+]
+2018-05-11 21:17:17 [::1][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\diversificamais/vendor/bower-asset/jquery/dist in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('panel\\assets\\Ap...')
+#7 C:\xampp\htdocs\diversificamais\panel\views\site\login.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(panel\controllers\SiteController))
+#11 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(415): yii\base\View->render('login', Array, Object(panel\controllers\SiteController))
+#12 C:\xampp\htdocs\diversificamais\panel\components\Controller.php(239): yii\base\Controller->renderPartial('login', Array)
+#13 [internal function]: panel\components\Controller->actionLogin()
+#14 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#17 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#18 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#20 {main}
+2018-05-11 21:17:17 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'v07elr73a572cd4ctsv4f2h84g'
+    '_csrf-panel' => 'a62a0035aabeac97b8ee9d879d990bcbd71f86e8b8248239fa7b71f85906dd6fa:2:{i:0;s:11:\"_csrf-panel\";i:1;s:32:\"hF9Wn9Opz5Jqyj6yodu5bWhuTVCkiHFQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/diversificamais/panel/'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/diversificamais/panel/'
+    'HTTP_COOKIE' => 'PHPSESSID=v07elr73a572cd4ctsv4f2h84g; _csrf-panel=a62a0035aabeac97b8ee9d879d990bcbd71f86e8b8248239fa7b71f85906dd6fa%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-panel%22%3Bi%3A1%3Bs%3A32%3A%22hF9Wn9Opz5Jqyj6yodu5bWhuTVCkiHFQ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Python27;C:\\Python27\\Scripts;C:\\Users\\danil\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\danil\\AppData\\Roaming\\npm;C:\\Program Files\\MongoDB\\Server\\3.6\\bin;C:\\mongodb\\bin;C:\\Users\\danil\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/diversificamais/panel/index.php'
+    'REMOTE_PORT' => '52408'
+    'REDIRECT_URL' => '/diversificamais/panel/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/diversificamais/panel/site/login'
+    'SCRIPT_NAME' => '/diversificamais/panel/index.php'
+    'PHP_SELF' => '/diversificamais/panel/index.php'
+    'REQUEST_TIME_FLOAT' => 1526084237.057
+    'REQUEST_TIME' => 1526084237
+]
+2018-05-11 21:17:19 [::1][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\diversificamais/vendor/bower-asset/jquery/dist in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('panel\\assets\\Ap...')
+#7 C:\xampp\htdocs\diversificamais\panel\views\site\login.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(panel\controllers\SiteController))
+#11 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(415): yii\base\View->render('login', Array, Object(panel\controllers\SiteController))
+#12 C:\xampp\htdocs\diversificamais\panel\components\Controller.php(239): yii\base\Controller->renderPartial('login', Array)
+#13 [internal function]: panel\components\Controller->actionLogin()
+#14 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#17 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#18 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#20 {main}
+2018-05-11 21:17:19 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'v07elr73a572cd4ctsv4f2h84g'
+    '_csrf-panel' => 'a62a0035aabeac97b8ee9d879d990bcbd71f86e8b8248239fa7b71f85906dd6fa:2:{i:0;s:11:\"_csrf-panel\";i:1;s:32:\"hF9Wn9Opz5Jqyj6yodu5bWhuTVCkiHFQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/diversificamais/panel/'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/diversificamais/panel/'
+    'HTTP_COOKIE' => 'PHPSESSID=v07elr73a572cd4ctsv4f2h84g; _csrf-panel=a62a0035aabeac97b8ee9d879d990bcbd71f86e8b8248239fa7b71f85906dd6fa%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-panel%22%3Bi%3A1%3Bs%3A32%3A%22hF9Wn9Opz5Jqyj6yodu5bWhuTVCkiHFQ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Python27;C:\\Python27\\Scripts;C:\\Users\\danil\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\danil\\AppData\\Roaming\\npm;C:\\Program Files\\MongoDB\\Server\\3.6\\bin;C:\\mongodb\\bin;C:\\Users\\danil\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/diversificamais/panel/index.php'
+    'REMOTE_PORT' => '52411'
+    'REDIRECT_URL' => '/diversificamais/panel/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/diversificamais/panel/site/login'
+    'SCRIPT_NAME' => '/diversificamais/panel/index.php'
+    'PHP_SELF' => '/diversificamais/panel/index.php'
+    'REQUEST_TIME_FLOAT' => 1526084238.988
+    'REQUEST_TIME' => 1526084238
+]
+2018-05-11 21:28:13 [::1][53][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\diversificamais/vendor/yidas/yii2-bower-asset/bower/highcharts in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('miloschuman\\hig...', Array, true)
+#3 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('miloschuman\\hig...')
+#4 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('miloschuman\\hig...')
+#5 C:\xampp\htdocs\diversificamais\vendor\miloschuman\yii2-highcharts-widget\src\Highcharts.php(99): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\xampp\htdocs\diversificamais\vendor\miloschuman\yii2-highcharts-widget\src\Highcharts.php(88): miloschuman\highcharts\Highcharts->registerAssets()
+#7 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Widget.php(140): miloschuman\highcharts\Highcharts->run()
+#8 C:\xampp\htdocs\diversificamais\panel\views\site\index.php(139): yii\base\Widget::widget(Array)
+#9 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(panel\controllers\SiteController))
+#12 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(panel\controllers\SiteController))
+#13 C:\xampp\htdocs\diversificamais\panel\controllers\SiteController.php(146): yii\base\Controller->render('index', Array)
+#14 [internal function]: panel\controllers\SiteController->actionIndex()
+#15 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#19 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#21 {main}
+2018-05-11 21:28:05 [::1][53][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '9rtjrjl5me3pmd8ccrjmb73mag'
+    '_csrf-panel' => '7923e5fd0116f45dc8e2a8be59ca36f203a874e70b58d5a165fffbd0d1e49260a:2:{i:0;s:11:\"_csrf-panel\";i:1;s:32:\"C5pCbFuVJ_DfJKrXIoSDyNfdhZ7uLVUL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/diversificamais/panel/'
+    '__id' => 53
+    'amountBTCBRL' => 31700
+    'investedReal' => 0
+    'totalProfit' => 0
+    'bitcoinTeamProfit' => 0
+    'realTeamProfit' => 0
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/diversificamais/panel/site/login'
+    'HTTP_COOKIE' => 'PHPSESSID=9rtjrjl5me3pmd8ccrjmb73mag; _csrf-panel=7923e5fd0116f45dc8e2a8be59ca36f203a874e70b58d5a165fffbd0d1e49260a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-panel%22%3Bi%3A1%3Bs%3A32%3A%22C5pCbFuVJ_DfJKrXIoSDyNfdhZ7uLVUL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Python27;C:\\Python27\\Scripts;C:\\Users\\danil\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\danil\\AppData\\Roaming\\npm;C:\\Program Files\\MongoDB\\Server\\3.6\\bin;C:\\mongodb\\bin;C:\\Users\\danil\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/diversificamais/panel/index.php'
+    'REMOTE_PORT' => '52530'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/diversificamais/panel/'
+    'SCRIPT_NAME' => '/diversificamais/panel/index.php'
+    'PHP_SELF' => '/diversificamais/panel/index.php'
+    'REQUEST_TIME_FLOAT' => 1526084885.204
+    'REQUEST_TIME' => 1526084885
+]
+2018-05-11 21:28:29 [::1][53][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\diversificamais/vendor/yidas/yii2-bower-asset/bower/highcharts in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('miloschuman\\hig...', Array, true)
+#3 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('miloschuman\\hig...')
+#4 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('miloschuman\\hig...')
+#5 C:\xampp\htdocs\diversificamais\vendor\miloschuman\yii2-highcharts-widget\src\Highcharts.php(99): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\xampp\htdocs\diversificamais\vendor\miloschuman\yii2-highcharts-widget\src\Highcharts.php(88): miloschuman\highcharts\Highcharts->registerAssets()
+#7 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Widget.php(140): miloschuman\highcharts\Highcharts->run()
+#8 C:\xampp\htdocs\diversificamais\panel\views\site\index.php(139): yii\base\Widget::widget(Array)
+#9 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(panel\controllers\SiteController))
+#12 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(panel\controllers\SiteController))
+#13 C:\xampp\htdocs\diversificamais\panel\controllers\SiteController.php(146): yii\base\Controller->render('index', Array)
+#14 [internal function]: panel\controllers\SiteController->actionIndex()
+#15 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#19 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#21 {main}
+2018-05-11 21:28:19 [::1][53][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '9rtjrjl5me3pmd8ccrjmb73mag'
+    '_csrf-panel' => '7923e5fd0116f45dc8e2a8be59ca36f203a874e70b58d5a165fffbd0d1e49260a:2:{i:0;s:11:\"_csrf-panel\";i:1;s:32:\"C5pCbFuVJ_DfJKrXIoSDyNfdhZ7uLVUL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/diversificamais/panel/'
+    '__id' => 53
+    'amountBTCBRL' => 31700
+    'investedReal' => 0
+    'totalProfit' => 0
+    'bitcoinTeamProfit' => 0
+    'realTeamProfit' => 0
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/diversificamais/panel/site/login'
+    'HTTP_COOKIE' => 'PHPSESSID=9rtjrjl5me3pmd8ccrjmb73mag; _csrf-panel=7923e5fd0116f45dc8e2a8be59ca36f203a874e70b58d5a165fffbd0d1e49260a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-panel%22%3Bi%3A1%3Bs%3A32%3A%22C5pCbFuVJ_DfJKrXIoSDyNfdhZ7uLVUL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Python27;C:\\Python27\\Scripts;C:\\Users\\danil\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\danil\\AppData\\Roaming\\npm;C:\\Program Files\\MongoDB\\Server\\3.6\\bin;C:\\mongodb\\bin;C:\\Users\\danil\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/diversificamais/panel/index.php'
+    'REMOTE_PORT' => '52541'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/diversificamais/panel/'
+    'SCRIPT_NAME' => '/diversificamais/panel/index.php'
+    'PHP_SELF' => '/diversificamais/panel/index.php'
+    'REQUEST_TIME_FLOAT' => 1526084899.887
+    'REQUEST_TIME' => 1526084899
+]
+2018-05-11 21:30:02 [::1][53][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\diversificamais/vendor/yidas/yii2-bower-asset/bower/highcharts in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('miloschuman\\hig...', Array, true)
+#3 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('miloschuman\\hig...')
+#4 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('miloschuman\\hig...')
+#5 C:\xampp\htdocs\diversificamais\vendor\miloschuman\yii2-highcharts-widget\src\Highcharts.php(99): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\xampp\htdocs\diversificamais\vendor\miloschuman\yii2-highcharts-widget\src\Highcharts.php(88): miloschuman\highcharts\Highcharts->registerAssets()
+#7 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Widget.php(140): miloschuman\highcharts\Highcharts->run()
+#8 C:\xampp\htdocs\diversificamais\panel\views\site\index.php(139): yii\base\Widget::widget(Array)
+#9 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(panel\controllers\SiteController))
+#12 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(panel\controllers\SiteController))
+#13 C:\xampp\htdocs\diversificamais\panel\controllers\SiteController.php(146): yii\base\Controller->render('index', Array)
+#14 [internal function]: panel\controllers\SiteController->actionIndex()
+#15 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#19 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#21 {main}
+2018-05-11 21:29:53 [::1][53][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '9rtjrjl5me3pmd8ccrjmb73mag'
+    '_csrf-panel' => '7923e5fd0116f45dc8e2a8be59ca36f203a874e70b58d5a165fffbd0d1e49260a:2:{i:0;s:11:\"_csrf-panel\";i:1;s:32:\"C5pCbFuVJ_DfJKrXIoSDyNfdhZ7uLVUL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/diversificamais/panel/'
+    '__id' => 53
+    'amountBTCBRL' => 31700
+    'investedReal' => 0
+    'totalProfit' => 0
+    'bitcoinTeamProfit' => 0
+    'realTeamProfit' => 0
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/diversificamais/panel/site/login'
+    'HTTP_COOKIE' => 'PHPSESSID=9rtjrjl5me3pmd8ccrjmb73mag; _csrf-panel=7923e5fd0116f45dc8e2a8be59ca36f203a874e70b58d5a165fffbd0d1e49260a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-panel%22%3Bi%3A1%3Bs%3A32%3A%22C5pCbFuVJ_DfJKrXIoSDyNfdhZ7uLVUL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Python27;C:\\Python27\\Scripts;C:\\Users\\danil\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\danil\\AppData\\Roaming\\npm;C:\\Program Files\\MongoDB\\Server\\3.6\\bin;C:\\mongodb\\bin;C:\\Users\\danil\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/diversificamais/panel/index.php'
+    'REMOTE_PORT' => '52550'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/diversificamais/panel/'
+    'SCRIPT_NAME' => '/diversificamais/panel/index.php'
+    'PHP_SELF' => '/diversificamais/panel/index.php'
+    'REQUEST_TIME_FLOAT' => 1526084993.487
+    'REQUEST_TIME' => 1526084993
+]
+2018-05-11 21:32:56 [::1][53][9rtjrjl5me3pmd8ccrjmb73mag][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\diversificamais/vendor/yidas/yii2-bower-asset/bower/highcharts in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('miloschuman\\hig...', Array, true)
+#3 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('miloschuman\\hig...')
+#4 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('miloschuman\\hig...')
+#5 C:\xampp\htdocs\diversificamais\vendor\miloschuman\yii2-highcharts-widget\src\Highcharts.php(99): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\xampp\htdocs\diversificamais\vendor\miloschuman\yii2-highcharts-widget\src\Highcharts.php(88): miloschuman\highcharts\Highcharts->registerAssets()
+#7 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Widget.php(140): miloschuman\highcharts\Highcharts->run()
+#8 C:\xampp\htdocs\diversificamais\panel\views\site\index.php(139): yii\base\Widget::widget(Array)
+#9 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(panel\controllers\SiteController))
+#12 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(panel\controllers\SiteController))
+#13 C:\xampp\htdocs\diversificamais\panel\controllers\SiteController.php(146): yii\base\Controller->render('index', Array)
+#14 [internal function]: panel\controllers\SiteController->actionIndex()
+#15 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#19 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#21 {main}
+2018-05-11 21:32:50 [::1][53][9rtjrjl5me3pmd8ccrjmb73mag][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '9rtjrjl5me3pmd8ccrjmb73mag'
+    '_csrf-panel' => '7923e5fd0116f45dc8e2a8be59ca36f203a874e70b58d5a165fffbd0d1e49260a:2:{i:0;s:11:\"_csrf-panel\";i:1;s:32:\"C5pCbFuVJ_DfJKrXIoSDyNfdhZ7uLVUL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/diversificamais/panel/'
+    '__id' => 53
+    'amountBTCBRL' => 31700
+    'investedReal' => 0
+    'totalProfit' => 0
+    'bitcoinTeamProfit' => 0
+    'realTeamProfit' => 0
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/diversificamais/panel/site/login'
+    'HTTP_COOKIE' => 'PHPSESSID=9rtjrjl5me3pmd8ccrjmb73mag; _csrf-panel=7923e5fd0116f45dc8e2a8be59ca36f203a874e70b58d5a165fffbd0d1e49260a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-panel%22%3Bi%3A1%3Bs%3A32%3A%22C5pCbFuVJ_DfJKrXIoSDyNfdhZ7uLVUL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Python27;C:\\Python27\\Scripts;C:\\Users\\danil\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\danil\\AppData\\Roaming\\npm;C:\\Program Files\\MongoDB\\Server\\3.6\\bin;C:\\mongodb\\bin;C:\\Users\\danil\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/diversificamais/panel/index.php'
+    'REMOTE_PORT' => '52579'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/diversificamais/panel/'
+    'SCRIPT_NAME' => '/diversificamais/panel/index.php'
+    'PHP_SELF' => '/diversificamais/panel/index.php'
+    'REQUEST_TIME_FLOAT' => 1526085170.051
+    'REQUEST_TIME' => 1526085170
+]
+2018-05-11 21:33:36 [::1][53][i52svqv54gml2b7v72rfqguoc6][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\diversificamais/vendor/yidas/yii2-bower-asset/bower/highcharts in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('miloschuman\\hig...', Array, true)
+#3 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('miloschuman\\hig...')
+#4 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('miloschuman\\hig...')
+#5 C:\xampp\htdocs\diversificamais\vendor\miloschuman\yii2-highcharts-widget\src\Highcharts.php(99): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\xampp\htdocs\diversificamais\vendor\miloschuman\yii2-highcharts-widget\src\Highcharts.php(88): miloschuman\highcharts\Highcharts->registerAssets()
+#7 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Widget.php(140): miloschuman\highcharts\Highcharts->run()
+#8 C:\xampp\htdocs\diversificamais\panel\views\site\index.php(139): yii\base\Widget::widget(Array)
+#9 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(panel\controllers\SiteController))
+#12 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(panel\controllers\SiteController))
+#13 C:\xampp\htdocs\diversificamais\panel\controllers\SiteController.php(146): yii\base\Controller->render('index', Array)
+#14 [internal function]: panel\controllers\SiteController->actionIndex()
+#15 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#19 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#21 {main}
+2018-05-11 21:33:30 [::1][53][i52svqv54gml2b7v72rfqguoc6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i52svqv54gml2b7v72rfqguoc6'
+    '_csrf-panel' => '3ffa09189edea6fbc1f25461b27e46f1b5fdeb84e5d1a209f2235091817210fda:2:{i:0;s:11:\"_csrf-panel\";i:1;s:32:\"EgfS3DDHmAp48NmfmKENY7SomeTQLWph\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/diversificamais/panel/'
+    '__id' => 53
+    'amountBTCBRL' => 31700
+    'investedReal' => 0
+    'totalProfit' => 0
+    'bitcoinTeamProfit' => 0
+    'realTeamProfit' => 0
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/diversificamais/panel/site/login'
+    'HTTP_COOKIE' => 'PHPSESSID=i52svqv54gml2b7v72rfqguoc6; _csrf-panel=3ffa09189edea6fbc1f25461b27e46f1b5fdeb84e5d1a209f2235091817210fda%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-panel%22%3Bi%3A1%3Bs%3A32%3A%22EgfS3DDHmAp48NmfmKENY7SomeTQLWph%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Python27;C:\\Python27\\Scripts;C:\\Users\\danil\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\danil\\AppData\\Roaming\\npm;C:\\Program Files\\MongoDB\\Server\\3.6\\bin;C:\\mongodb\\bin;C:\\Users\\danil\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/diversificamais/panel/index.php'
+    'REMOTE_PORT' => '52606'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/diversificamais/panel/'
+    'SCRIPT_NAME' => '/diversificamais/panel/index.php'
+    'PHP_SELF' => '/diversificamais/panel/index.php'
+    'REQUEST_TIME_FLOAT' => 1526085210.909
+    'REQUEST_TIME' => 1526085210
+]
+2018-05-11 21:39:16 [::1][53][i52svqv54gml2b7v72rfqguoc6][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\diversificamais/vendor/bower-asset/highcharts in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('miloschuman\\hig...', Array, true)
+#3 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('miloschuman\\hig...')
+#4 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('miloschuman\\hig...')
+#5 C:\xampp\htdocs\diversificamais\vendor\miloschuman\yii2-highcharts-widget\src\Highcharts.php(99): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\xampp\htdocs\diversificamais\vendor\miloschuman\yii2-highcharts-widget\src\Highcharts.php(88): miloschuman\highcharts\Highcharts->registerAssets()
+#7 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Widget.php(140): miloschuman\highcharts\Highcharts->run()
+#8 C:\xampp\htdocs\diversificamais\panel\views\site\index.php(139): yii\base\Widget::widget(Array)
+#9 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(panel\controllers\SiteController))
+#12 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(panel\controllers\SiteController))
+#13 C:\xampp\htdocs\diversificamais\panel\controllers\SiteController.php(146): yii\base\Controller->render('index', Array)
+#14 [internal function]: panel\controllers\SiteController->actionIndex()
+#15 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#19 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#21 {main}
+2018-05-11 21:39:06 [::1][53][i52svqv54gml2b7v72rfqguoc6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'i52svqv54gml2b7v72rfqguoc6'
+    '_csrf-panel' => '3ffa09189edea6fbc1f25461b27e46f1b5fdeb84e5d1a209f2235091817210fda:2:{i:0;s:11:\"_csrf-panel\";i:1;s:32:\"EgfS3DDHmAp48NmfmKENY7SomeTQLWph\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/diversificamais/panel/'
+    '__id' => 53
+    'amountBTCBRL' => 31700
+    'investedReal' => 0
+    'totalProfit' => 0
+    'bitcoinTeamProfit' => 0
+    'realTeamProfit' => 0
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/diversificamais/panel/'
+    'HTTP_COOKIE' => 'PHPSESSID=i52svqv54gml2b7v72rfqguoc6; _csrf-panel=3ffa09189edea6fbc1f25461b27e46f1b5fdeb84e5d1a209f2235091817210fda%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-panel%22%3Bi%3A1%3Bs%3A32%3A%22EgfS3DDHmAp48NmfmKENY7SomeTQLWph%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Python27;C:\\Python27\\Scripts;C:\\Users\\danil\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\danil\\AppData\\Roaming\\npm;C:\\Program Files\\MongoDB\\Server\\3.6\\bin;C:\\mongodb\\bin;C:\\Users\\danil\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/diversificamais/panel/index.php'
+    'REMOTE_PORT' => '52643'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/diversificamais/panel/'
+    'SCRIPT_NAME' => '/diversificamais/panel/index.php'
+    'PHP_SELF' => '/diversificamais/panel/index.php'
+    'REQUEST_TIME_FLOAT' => 1526085546.583
+    'REQUEST_TIME' => 1526085546
+]
+2018-05-11 22:04:11 [::1][1][39sga2g5en1n7a93ulak1k3h7s][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Either 'name', or 'model' and 'attribute' properties must be specified. in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\widgets\InputWidget.php:75
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\widgets\MaskedInput.php(115): yii\widgets\InputWidget->init()
+#1 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\widgets\MaskedInput->init()
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\widgets\\Mas...', Array, Array)
+#5 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Mas...', Array, Array)
+#6 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\widgets\ActiveField.php(781): yii\base\Widget::widget(Array)
+#8 C:\xampp\htdocs\diversificamais\panel\views\registrations\_form.php(65): yii\widgets\ActiveField->widget('yii\\widgets\\Mas...', Array)
+#9 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#12 C:\xampp\htdocs\diversificamais\panel\views\registrations\update.php(25): yii\base\View->render('_form', Array)
+#13 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#15 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(panel\controllers\RegistrationsController))
+#16 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('update', Array, Object(panel\controllers\RegistrationsController))
+#17 C:\xampp\htdocs\diversificamais\panel\controllers\RegistrationsController.php(206): yii\base\Controller->render('update', Array)
+#18 [internal function]: panel\controllers\RegistrationsController->actionUpdate('1')
+#19 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('update', Array)
+#22 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('registrations/u...', Array)
+#23 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#25 {main}
+2018-05-11 22:04:09 [::1][1][39sga2g5en1n7a93ulak1k3h7s][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '39sga2g5en1n7a93ulak1k3h7s'
+    '_csrf-panel' => '2e3e3431d09f004b1d66e843b98f2b6f7fcdff06e070ca41154840899421917fa:2:{i:0;s:11:\"_csrf-panel\";i:1;s:32:\"2CzCc___fQNfPirCXDzf2d8V5enKIGH6\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/diversificamais/panel/'
+    '__id' => 1
+    'amountBTCBRL' => 31797.22
+    'investedReal' => '1500'
+    'totalProfit' => 238.47915
+    'bitcoinTeamProfit' => 0
+    'realTeamProfit' => 0
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/diversificamais/panel/registrations'
+    'HTTP_COOKIE' => 'PHPSESSID=39sga2g5en1n7a93ulak1k3h7s; _csrf-panel=2e3e3431d09f004b1d66e843b98f2b6f7fcdff06e070ca41154840899421917fa%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-panel%22%3Bi%3A1%3Bs%3A32%3A%222CzCc___fQNfPirCXDzf2d8V5enKIGH6%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Python27;C:\\Python27\\Scripts;C:\\Users\\danil\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\danil\\AppData\\Roaming\\npm;C:\\Program Files\\MongoDB\\Server\\3.6\\bin;C:\\mongodb\\bin;C:\\Users\\danil\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/diversificamais/panel/index.php'
+    'REMOTE_PORT' => '53129'
+    'REDIRECT_URL' => '/diversificamais/panel/registrations/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/diversificamais/panel/registrations/update?id=1'
+    'SCRIPT_NAME' => '/diversificamais/panel/index.php'
+    'PHP_SELF' => '/diversificamais/panel/index.php'
+    'REQUEST_TIME_FLOAT' => 1526087049.392
+    'REQUEST_TIME' => 1526087049
+]
+2018-05-11 22:25:58 [::1][2][cl7hueji0qim9tq0490l02vpoc][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: register/favicon.ico in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('favicon.ico', Array)
+#1 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('register/favico...', Array)
+#2 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#2 {main}
+2018-05-11 22:25:57 [::1][2][cl7hueji0qim9tq0490l02vpoc][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cl7hueji0qim9tq0490l02vpoc'
+    '_csrf-panel' => 'def4fc504cdc216be8337193a34b1a23293a3b622a6e81c7079e16a14de3daaba:2:{i:0;s:11:\"_csrf-panel\";i:1;s:32:\"ftMFQusDJb7GaKSN9CMvYF0K3i-a2uq-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    'amountBTCBRL' => 31491.49
+    'investedReal' => '1500'
+    'totalProfit' => 236.186175
+    'bitcoinTeamProfit' => 0
+    'realTeamProfit' => 0
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=cl7hueji0qim9tq0490l02vpoc; _csrf-panel=def4fc504cdc216be8337193a34b1a23293a3b622a6e81c7079e16a14de3daaba%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-panel%22%3Bi%3A1%3Bs%3A32%3A%22ftMFQusDJb7GaKSN9CMvYF0K3i-a2uq-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Python27;C:\\Python27\\Scripts;C:\\Users\\danil\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\danil\\AppData\\Roaming\\npm;C:\\Program Files\\MongoDB\\Server\\3.6\\bin;C:\\mongodb\\bin;C:\\Users\\danil\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/diversificamais/panel/index.php'
+    'REMOTE_PORT' => '53522'
+    'REDIRECT_URL' => '/diversificamais/panel/register/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/diversificamais/panel/register/favicon.ico'
+    'SCRIPT_NAME' => '/diversificamais/panel/index.php'
+    'PHP_SELF' => '/diversificamais/panel/index.php'
+    'REQUEST_TIME_FLOAT' => 1526088357.711
+    'REQUEST_TIME' => 1526088357
+]
+2018-05-11 22:26:01 [::1][2][cl7hueji0qim9tq0490l02vpoc][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: register/favicon.ico in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('favicon.ico', Array)
+#1 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('register/favico...', Array)
+#2 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#2 {main}
+2018-05-11 22:25:57 [::1][2][cl7hueji0qim9tq0490l02vpoc][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cl7hueji0qim9tq0490l02vpoc'
+    '_csrf-panel' => 'def4fc504cdc216be8337193a34b1a23293a3b622a6e81c7079e16a14de3daaba:2:{i:0;s:11:\"_csrf-panel\";i:1;s:32:\"ftMFQusDJb7GaKSN9CMvYF0K3i-a2uq-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    'amountBTCBRL' => 31491.49
+    'investedReal' => '1500'
+    'totalProfit' => 236.186175
+    'bitcoinTeamProfit' => 0
+    'realTeamProfit' => 0
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=cl7hueji0qim9tq0490l02vpoc; _csrf-panel=def4fc504cdc216be8337193a34b1a23293a3b622a6e81c7079e16a14de3daaba%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-panel%22%3Bi%3A1%3Bs%3A32%3A%22ftMFQusDJb7GaKSN9CMvYF0K3i-a2uq-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Python27;C:\\Python27\\Scripts;C:\\Users\\danil\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\danil\\AppData\\Roaming\\npm;C:\\Program Files\\MongoDB\\Server\\3.6\\bin;C:\\mongodb\\bin;C:\\Users\\danil\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/diversificamais/panel/index.php'
+    'REMOTE_PORT' => '53527'
+    'REDIRECT_URL' => '/diversificamais/panel/register/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/diversificamais/panel/register/favicon.ico'
+    'SCRIPT_NAME' => '/diversificamais/panel/index.php'
+    'PHP_SELF' => '/diversificamais/panel/index.php'
+    'REQUEST_TIME_FLOAT' => 1526088357.945
+    'REQUEST_TIME' => 1526088357
+]
+2018-05-11 22:26:29 [::1][2][cl7hueji0qim9tq0490l02vpoc][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: withdraw/favicon.ico in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('favicon.ico', Array)
+#1 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('withdraw/favico...', Array)
+#2 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#2 {main}
+2018-05-11 22:26:28 [::1][2][cl7hueji0qim9tq0490l02vpoc][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cl7hueji0qim9tq0490l02vpoc'
+    '_csrf-panel' => 'def4fc504cdc216be8337193a34b1a23293a3b622a6e81c7079e16a14de3daaba:2:{i:0;s:11:\"_csrf-panel\";i:1;s:32:\"ftMFQusDJb7GaKSN9CMvYF0K3i-a2uq-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    'amountBTCBRL' => 31491.49
+    'investedReal' => '1500'
+    'totalProfit' => 236.186175
+    'bitcoinTeamProfit' => 0
+    'realTeamProfit' => 0
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=cl7hueji0qim9tq0490l02vpoc; _csrf-panel=def4fc504cdc216be8337193a34b1a23293a3b622a6e81c7079e16a14de3daaba%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-panel%22%3Bi%3A1%3Bs%3A32%3A%22ftMFQusDJb7GaKSN9CMvYF0K3i-a2uq-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Python27;C:\\Python27\\Scripts;C:\\Users\\danil\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\danil\\AppData\\Roaming\\npm;C:\\Program Files\\MongoDB\\Server\\3.6\\bin;C:\\mongodb\\bin;C:\\Users\\danil\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/diversificamais/panel/index.php'
+    'REMOTE_PORT' => '53538'
+    'REDIRECT_URL' => '/diversificamais/panel/withdraw/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/diversificamais/panel/withdraw/favicon.ico'
+    'SCRIPT_NAME' => '/diversificamais/panel/index.php'
+    'PHP_SELF' => '/diversificamais/panel/index.php'
+    'REQUEST_TIME_FLOAT' => 1526088388.426
+    'REQUEST_TIME' => 1526088388
+]
+2018-05-11 22:26:31 [::1][2][cl7hueji0qim9tq0490l02vpoc][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: withdraw/favicon.ico in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('favicon.ico', Array)
+#1 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('withdraw/favico...', Array)
+#2 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\diversificamais\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\diversificamais\panel\index.php(15): yii\base\Application->run()
+#2 {main}
+2018-05-11 22:26:28 [::1][2][cl7hueji0qim9tq0490l02vpoc][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'cl7hueji0qim9tq0490l02vpoc'
+    '_csrf-panel' => 'def4fc504cdc216be8337193a34b1a23293a3b622a6e81c7079e16a14de3daaba:2:{i:0;s:11:\"_csrf-panel\";i:1;s:32:\"ftMFQusDJb7GaKSN9CMvYF0K3i-a2uq-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    'amountBTCBRL' => 31491.49
+    'investedReal' => '1500'
+    'totalProfit' => 236.186175
+    'bitcoinTeamProfit' => 0
+    'realTeamProfit' => 0
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=cl7hueji0qim9tq0490l02vpoc; _csrf-panel=def4fc504cdc216be8337193a34b1a23293a3b622a6e81c7079e16a14de3daaba%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-panel%22%3Bi%3A1%3Bs%3A32%3A%22ftMFQusDJb7GaKSN9CMvYF0K3i-a2uq-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Python27;C:\\Python27\\Scripts;C:\\Users\\danil\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\danil\\AppData\\Roaming\\npm;C:\\Program Files\\MongoDB\\Server\\3.6\\bin;C:\\mongodb\\bin;C:\\Users\\danil\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/diversificamais/panel/index.php'
+    'REMOTE_PORT' => '53542'
+    'REDIRECT_URL' => '/diversificamais/panel/withdraw/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/diversificamais/panel/withdraw/favicon.ico'
+    'SCRIPT_NAME' => '/diversificamais/panel/index.php'
+    'PHP_SELF' => '/diversificamais/panel/index.php'
+    'REQUEST_TIME_FLOAT' => 1526088388.582
+    'REQUEST_TIME' => 1526088388
+]
