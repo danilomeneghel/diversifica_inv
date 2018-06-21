@@ -15,6 +15,13 @@ Sistema de pagamento em criptomoedas desenvolvido com o Framework Yii2 e banco d
 - HighCharts
 - API Poloniex
 
+## Requisitos
+
+- Apache
+- PHP 7
+- MySql >=5
+- Composer
+
 ## Tecnologias
 
 - PHP 7
